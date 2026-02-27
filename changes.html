@@ -3,58 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Changes - Karla Marie Heusner</title>
+    <title>Request Changes - Karla Marie Heusner</title>
+    <meta name="robots" content="noindex, nofollow">
     <link rel="canonical" href="https://karlamheusner.com/changes.html">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✒️</text></svg>">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .form-group {
+            margin-bottom: 2rem;
+        }
+        .form-group label {
+            display: block;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 1.1rem;
+            color: #2c4a4e;
+            margin-bottom: 0.5rem;
+        }
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 0.9rem 1.2rem;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 1rem;
+            color: #3a2f2a;
+            background: #fff;
+            border: 1px solid #c9c1b6;
+            border-radius: 4px;
+            transition: border-color 0.3s ease;
+        }
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #5d7c73;
+            box-shadow: 0 0 0 3px rgba(93, 124, 115, 0.1);
+        }
+        .form-group textarea {
+            min-height: 160px;
+            resize: vertical;
+        }
+        .form-group .hint {
+            font-size: 0.85rem;
+            color: #8a8278;
+            font-style: italic;
+            margin-top: 0.4rem;
+        }
+        .submit-btn {
+            display: inline-block;
+            padding: 1rem 3rem;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 1.1rem;
+            color: #faf8f5;
+            background: linear-gradient(135deg, #2c4a4e, #5d7c73);
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            letter-spacing: 0.03em;
+            transition: opacity 0.3s ease, transform 0.2s ease;
+        }
+        .submit-btn:hover {
+            opacity: 0.9;
+            transform: translateY(-1px);
+        }
+        .form-note {
+            text-align: center;
+            font-style: italic;
+            color: #8a8278;
+            margin-top: 2rem;
+            font-size: 0.95rem;
+        }
+    </style>
 </head>
 <body>
-    <section class="section">
+    <section class="section" style="padding-top: 4rem;">
         <div class="container">
-            <h1>Website Changes Log</h1>
-            
-            <div class="content-block">
-                <h2>Version 1.0 - February 26, 2025</h2>
-                <p><strong>Initial Launch</strong></p>
-                <ul style="margin-left: 2rem; margin-bottom: 2rem;">
-                    <li>Created elegant, typography-focused design with warm earth tones</li>
-                    <li>Implemented all core sections: Hero, About, Published Work, Journalism, Teaching, Contact</li>
-                    <li>Added comprehensive SEO optimization with meta tags, Open Graph, Twitter Cards, and JSON-LD structured data</li>
-                    <li>Featured "Food For Thought: Chronicles of Belize" with Amazon link</li>
-                    <li>Highlighted journalism experience at The Reporter and Channel 5 Belize</li>
-                    <li>Included teaching role at Miami Dade College</li>
-                    <li>Added floating contact button for easy access</li>
-                    <li>Implemented responsive design for all devices</li>
-                    <li>Created robots.txt and sitemap.xml for search engine optimization</li>
-                    <li>Added Bayou Web Studios credit in footer</li>
-                </ul>
-                
-                <h3>Design Features</h3>
-                <ul style="margin-left: 2rem; margin-bottom: 2rem;">
-                    <li>Typography-forward approach using Georgia and Times serif fonts</li>
-                    <li>Warm color palette: deep teal (#2c4a4e), sage green (#5d7c73), warm cream (#faf8f5)</li>
-                    <li>Subtle background textures and gradients</li>
-                    <li>Literary aesthetic appropriate for writer/journalist/educator</li>
-                    <li>No images used - pure typography and color design</li>
-                    <li>Elegant hover effects and smooth transitions</li>
-                </ul>
-                
-                <h3>SEO Implementation</h3>
-                <ul style="margin-left: 2rem; margin-bottom: 2rem;">
-                    <li>Comprehensive meta description highlighting all three career facets</li>
-                    <li>Open Graph and Twitter Card optimization</li>
-                    <li>JSON-LD structured data for Person, Occupation, and Book entities</li>
-                    <li>Canonical URL: https://karlamheusner.com/</li>
-                    <li>Proper heading hierarchy and semantic HTML</li>
-                    <li>Alt text for icons and meaningful link text</li>
-                </ul>
-                
-                <p><em>Website created by Bayou Web Studios for Karla Marie Heusner</em></p>
+            <h1 class="section-title" style="font-size: 2.8rem;">Request a Change</h1>
+            <p class="intro-text" style="text-align: center;">
+                Use this form to request updates to your website. We'll review your request and make the changes promptly.
+            </p>
+
+            <form action="https://formsubmit.co/bayouwebstudio@gmail.com" method="POST">
+                <!-- FormSubmit config -->
+                <input type="hidden" name="_subject" value="Website Change Request — karlamheusner.com">
+                <input type="hidden" name="_template" value="box">
+                <input type="hidden" name="_captcha" value="true">
+                <input type="hidden" name="_next" value="https://karlamheusner.com/changes.html?submitted=true">
+                <input type="text" name="_honey" style="display:none">
+
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required value="Karla Marie Heusner">
+                </div>
+
+                <div class="form-group">
+                    <label for="section">Which section needs updating?</label>
+                    <select id="section" name="section">
+                        <option value="">— Select a section —</option>
+                        <option value="Hero / Header">Hero / Header</option>
+                        <option value="About">About</option>
+                        <option value="Published Work">Published Work</option>
+                        <option value="Journalism">Journalism</option>
+                        <option value="Teaching">Teaching</option>
+                        <option value="Contact Info">Contact Info</option>
+                        <option value="General / Other">General / Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="change">What would you like changed?</label>
+                    <textarea id="change" name="change_description" required placeholder="Describe the change you'd like — new text, updated info, a link to add, etc."></textarea>
+                    <p class="hint">Be as specific as possible. Copy/paste the exact text you'd like if it's a wording change.</p>
+                </div>
+
+                <div class="form-group">
+                    <label for="priority">Priority</label>
+                    <select id="priority" name="priority">
+                        <option value="Normal">Normal — whenever you get to it</option>
+                        <option value="Soon">Soon — within a day or two</option>
+                        <option value="Urgent">Urgent — as soon as possible</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="notes">Anything else?</label>
+                    <textarea id="notes" name="additional_notes" placeholder="Links, references, or any other context..." style="min-height: 80px;"></textarea>
+                </div>
+
+                <div style="text-align: center;">
+                    <button type="submit" class="submit-btn">Submit Request</button>
+                </div>
+
+                <p class="form-note">
+                    You'll receive a confirmation email. Most changes are completed within 24 hours.
+                </p>
+            </form>
+
+            <div id="success-message" style="display:none; text-align:center; padding: 3rem 0;">
+                <h2 style="color: #5d7c73;">✓ Request Received</h2>
+                <p style="font-size: 1.15rem; margin-top: 1rem;">Thank you! We'll review your change request and get it done promptly.</p>
+                <a href="/" style="color: #2c4a4e; text-decoration: none; font-size: 1.1rem; display: inline-block; margin-top: 2rem;">← Back to Home</a>
             </div>
-            
+
             <div style="text-align: center; margin-top: 3rem;">
-                <a href="/" style="color: #2c4a4e; text-decoration: none; font-size: 1.1rem;">← Back to Home</a>
+                <a href="/" style="color: #2c4a4e; text-decoration: none; font-size: 1rem;">← Back to Home</a>
             </div>
         </div>
     </section>
+
+    <script>
+        // Show success message if redirected back after submission
+        if (window.location.search.includes('submitted=true')) {
+            document.querySelector('form').style.display = 'none';
+            document.querySelector('.intro-text').style.display = 'none';
+            document.getElementById('success-message').style.display = 'block';
+        }
+    </script>
 </body>
 </html>
